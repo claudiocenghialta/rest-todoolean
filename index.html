@@ -14,16 +14,27 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>To-do List</title>
 </head>
 
 <body>
+    <h1>La tua To-do List</h1>
     <input id="nuovaVoce" type="text" placeholder="Inserisci nuova voce">
-    <button id="addNew">Click per aggiungere</button>
-    <div><strong>La tua lista:</strong></div>
+    <button id="addNew">Click o invio per aggiungere</button>
+    <h2>Elenco:</h2>
     <ul class="lista"></ul>
+
+    <!-- TEMPLATE HANDLEBARS -->
     <script id="entry-template" type="text/x-handlebars-template">
-        <li data-id="{{id}}">{{text}}</li>
+        <li data-id="{{id}}">
+            <span class="testoVoce">{{text}}</span>
+            <i class="fas fa-pencil-alt modify"></i>
+            <i class="far fa-trash-alt delete"></i>
+            <input type="text" class="nuovoTesto hidden">
+            <i class="far fa-check-circle conferma hidden"></i>
+            <i class="far fa-times-circle annulla hidden"></i>
+        </li>
+
     </script>
 
 

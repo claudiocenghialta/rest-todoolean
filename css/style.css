@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,8 +8,22 @@
     content: '';
     display: table;
     clear: both;
-}
+} */
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+
+.testoVoce,
+.nuovoTesto {
+    display: inline-block;
+    width: 150px;
+    padding: 3px 10px;
+}
+.nuovoTesto{
+    border: 1px solid lightgrey;
+}
+.hidden {
+    display: none;
 }
