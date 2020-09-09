@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <div class="container"></div>
+    <input id="nuovaVoce" type="text" placeholder="Inserisci nuova voce">
+    <button id="addNew">Click per aggiungere</button>
+    <div><strong>La tua lista:</strong></div>
+    <ul class="lista"></ul>
     <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
-            <h1>{{title}}</h1>
-            <div class="body">{{body}}</div>
-        </div>
+        <li data-id="{{id}}">{{text}}</li>
     </script>
 
 
